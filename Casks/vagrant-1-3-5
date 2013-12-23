@@ -1,0 +1,602 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>phinze/homebrew-cask at master · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <link rel="logo" type="image/svg" href="https://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
+    <meta property="og:image" content="https://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png">
+    <meta name="hostname" content="github-fe137-cp1-prd.iad.github.net">
+    <meta name="ruby" content="ruby 1.9.3p194-tcs-github-tcmalloc (e1c0c3f392) [x86_64-linux]">
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="/_sockets" />
+    
+
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="60F62705:4E6B:54BC8B6:52B858AE" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="6DxNt87UfP7S+4NqLiFbsX7/XtK2ed93rIM8+WZ6+5w=" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-8f6ca9b17ae3eba1e30276eef0a16282cb651c78.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-7ac593afddcc7532d8340dcde39be16c8cb6f732.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+    
+
+      <script src="https://github.global.ssl.fastly.net/assets/frameworks-29a3fb0547e33bd8d4530bbad9bae3ef00d83293.js" type="text/javascript"></script>
+      <script src="https://github.global.ssl.fastly.net/assets/github-0b6bf4a8bb8bc8246eb6d07db6a63cde130f5001.js" type="text/javascript"></script>
+      
+      <meta http-equiv="x-pjax-version" content="25e9435426189c5ffea9ed5e7a16f621">
+
+        <link data-pjax-transient rel='permalink' href='/phinze/homebrew-cask/blame/f34563e300200ec04e124c73e0b525776f321b89/Casks/vagrant.rb'>
+  <meta property="og:title" content="homebrew-cask"/>
+  <meta property="og:type" content="githubog:gitrepository"/>
+  <meta property="og:url" content="https://github.com/phinze/homebrew-cask"/>
+  <meta property="og:image" content="https://github.global.ssl.fastly.net/images/gravatars/gravatar-user-420.png"/>
+  <meta property="og:site_name" content="GitHub"/>
+  <meta property="og:description" content="homebrew-cask - a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries"/>
+
+  <meta name="description" content="homebrew-cask - a friendly homebrew-style CLI workflow for the administration of Mac applications distributed as binaries" />
+
+  <meta content="37534" name="octolytics-dimension-user_id" /><meta content="phinze" name="octolytics-dimension-user_login" /><meta content="3623050" name="octolytics-dimension-repository_id" /><meta content="phinze/homebrew-cask" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="3623050" name="octolytics-dimension-repository_network_root_id" /><meta content="phinze/homebrew-cask" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/phinze/homebrew-cask/commits/f34563e300200ec04e124c73e0b525776f321b89.atom" rel="alternate" title="Recent Commits to homebrew-cask:f34563e300200ec04e124c73e0b525776f321b89" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fphinze%2Fhomebrew-cask%2Fblame%2Ff34563e300200ec04e124c73e0b525776f321b89%2FCasks%2Fvagrant.rb">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="phinze/homebrew-cask"
+      data-branch="f34563e300200ec04e124c73e0b525776f321b89"
+      data-sha="03f70c49efdeba41483ee5e52d03e416959326a4"
+  >
+
+    <input type="hidden" name="nwo" value="phinze/homebrew-cask" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="octicon help tooltipped downwards" title="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+      
+
+
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+    <a href="/login?return_to=%2Fphinze%2Fhomebrew-cask"
+    class="minibutton with-count js-toggler-target star-button tooltipped upwards"
+    title="You must be signed in to use this feature" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+    <a class="social-count js-social-count" href="/phinze/homebrew-cask/stargazers">
+      2,194
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fphinze%2Fhomebrew-cask"
+        class="minibutton with-count js-toggler-target fork-button tooltipped upwards"
+        title="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-git-branch"></span>Fork
+      </a>
+      <a href="/phinze/homebrew-cask/network" class="social-count">
+        496
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author">
+            <a href="/phinze" class="url fn" itemprop="url" rel="author"><span itemprop="title">phinze</span></a>
+          </span>
+          <span class="repohead-name-divider">/</span>
+          <strong><a href="/phinze/homebrew-cask" class="js-current-repository js-repo-home-link">homebrew-cask</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      
+
+      <div class="repository-with-sidebar repo-container  ">
+
+        <div class="repository-sidebar">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped leftwards" title="Code">
+        <a href="/phinze/homebrew-cask" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /phinze/homebrew-cask">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped leftwards" title="Issues">
+          <a href="/phinze/homebrew-cask/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /phinze/homebrew-cask/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>65</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped leftwards" title="Pull Requests">
+        <a href="/phinze/homebrew-cask/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /phinze/homebrew-cask/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>7</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+        <li class="tooltipped leftwards" title="Wiki">
+          <a href="/phinze/homebrew-cask/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_wiki /phinze/homebrew-cask/wiki">
+            <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped leftwards" title="Pulse">
+        <a href="/phinze/homebrew-cask/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /phinze/homebrew-cask/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Graphs">
+        <a href="/phinze/homebrew-cask/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /phinze/homebrew-cask/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped leftwards" title="Network">
+        <a href="/phinze/homebrew-cask/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /phinze/homebrew-cask/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+            <div class="only-with-full-nav">
+              
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/phinze/homebrew-cask.git" readonly="readonly">
+
+    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/phinze/homebrew-cask.git" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/phinze/homebrew-cask" readonly="readonly">
+
+    <span class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/phinze/homebrew-cask" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>,
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="octicon help tooltipped upwards" title="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+
+              <a href="/phinze/homebrew-cask/archive/f34563e300200ec04e124c73e0b525776f321b89.zip"
+                 class="minibutton sidebar-button"
+                 title="Download this repository as a zip file"
+                 rel="nofollow">
+                <span class="octicon octicon-cloud-download"></span>
+                Download ZIP
+              </a>
+            </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+
+
+
+<div class="breadcrumb css-truncate blame-breadcrumb">
+  <span class="css-truncate-target"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/phinze/homebrew-cask/tree/f34563e300200ec04e124c73e0b525776f321b89" data-branch="f34563e300200ec04e124c73e0b525776f321b89" data-direction="back" data-pjax="true" itemscope="url" rel="nofollow"><span itemprop="title">homebrew-cask</span></a></span></span><span class="separator"> / </span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/phinze/homebrew-cask/tree/f34563e300200ec04e124c73e0b525776f321b89/Casks" data-branch="f34563e300200ec04e124c73e0b525776f321b89" data-direction="back" data-pjax="true" itemscope="url" rel="nofollow"><span itemprop="title">Casks</span></a></span><span class="separator"> / </span><strong class="final-path">vagrant.rb</strong></span> <span class="js-zeroclipboard minibutton zeroclipboard-button" data-clipboard-text="Casks/vagrant.rb" data-copied-hint="copied!" title="copy to clipboard"><span class="octicon octicon-clippy"></span></span>
+</div>
+
+<div class="line-age-legend">
+  <span>Newer</span>
+  <ol>
+    <li class='heat1'></li>
+    <li class='heat2'></li>
+    <li class='heat3'></li>
+    <li class='heat4'></li>
+    <li class='heat5'></li>
+    <li class='heat6'></li>
+    <li class='heat7'></li>
+    <li class='heat8'></li>
+    <li class='heat9'></li>
+    <li class='heat10'></li>
+  </ol>
+  <span>Older</span>
+</div>
+
+<div id="files">
+  <div class="file">
+    <div class="meta" style="border-bottom: none;">
+      <div class="info">
+        <span class="icon"><span class="octicon octicon-file-text"></span></span>
+        <span class="mode" title="File Mode">100644</span>
+          <span>9 lines (8 sloc)</span>
+        <span>0.317 kb</span>
+      </div>
+      <div class="actions">
+        <div class="button-group">
+          <a href="/phinze/homebrew-cask/raw/f34563e300200ec04e124c73e0b525776f321b89/Casks/vagrant.rb" class="minibutton" id="raw-url">Raw</a>
+          <a href="/phinze/homebrew-cask/blob/f34563e300200ec04e124c73e0b525776f321b89/Casks/vagrant.rb" class="minibutton">Normal View</a>
+          <a href="/phinze/homebrew-cask/commits/f34563e300200ec04e124c73e0b525776f321b89/Casks/vagrant.rb" class="minibutton" rel="nofollow">History</a>
+        </div><!-- /.button-group -->
+      </div><!-- /.actions -->
+    </div>
+
+    <div class="highlight data blame">
+      <table class="file-code file-blame js-blame-heat" data-repo-created="2012-03-04 18:05:17 -0800">
+
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/92ea8c0ee9c73b2895388e14ada88e327f3a39a8">92ea8c0e</a>
+                  <a href="/phinze/homebrew-cask/blame/92ea8c0ee9c73b2895388e14ada88e327f3a39a8/Casks/vagrant.rb">&#187;</a>
+                  <a href="/jasisk" rel="author">jasisk</a>
+                </code>
+                <br />
+                <span class="date">2013-02-06</span>
+                <span class="message" title="Vagrant 1.0.6
+
+Partial support (download + checksum only) for .pkg installers.
+Closes #151.
+
+Signed-off-by: Félix Saparelli &lt;me@passcod.net&gt;">Vagrant 1.0.6 </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-02-06 13:36:17 -0800"></td>
+            <td nowrap class="diff-line-num line-number" id="LID1" rel="#L1">1</td>
+            <td nowrap class="diff-line-code line-data" id="LC1"><span class="k">class</span> <span class="nc">Vagrant</span> <span class="o">&lt;</span> <span class="no">Cask</span></td>
+          </tr>
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/f34563e300200ec04e124c73e0b525776f321b89">f34563e3</a>
+                  <a href="/phinze/homebrew-cask/blame/f34563e300200ec04e124c73e0b525776f321b89/Casks/vagrant.rb">&#187;</a>
+                  <a href="/janrito" rel="author">janrito</a>
+                </code>
+                <br />
+                <span class="date">2013-10-16</span>
+                <span class="message" title="Updated vagrant to 1.3.5
+
+Updated Vagrant to latest version (1.3.5) compatible with the latest virtualbox">Updated vagrant to 1.3.5 </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-10-16 03:01:19 -0700"></td>
+            <td nowrap class="diff-line-num line-number" id="LID2" rel="#L2">2</td>
+            <td nowrap class="diff-line-code line-data" id="LC2">  <span class="n">url</span> <span class="s1">&#39;http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant-1.3.5.dmg&#39;</span></td>
+          </tr>
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/92ea8c0ee9c73b2895388e14ada88e327f3a39a8">92ea8c0e</a>
+                  <a href="/phinze/homebrew-cask/blame/92ea8c0ee9c73b2895388e14ada88e327f3a39a8/Casks/vagrant.rb">&#187;</a>
+                  <a href="/jasisk" rel="author">jasisk</a>
+                </code>
+                <br />
+                <span class="date">2013-02-06</span>
+                <span class="message" title="Vagrant 1.0.6
+
+Partial support (download + checksum only) for .pkg installers.
+Closes #151.
+
+Signed-off-by: Félix Saparelli &lt;me@passcod.net&gt;">Vagrant 1.0.6 </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-02-06 13:36:17 -0800"></td>
+            <td nowrap class="diff-line-num line-number" id="LID3" rel="#L3">3</td>
+            <td nowrap class="diff-line-code line-data" id="LC3">  <span class="n">homepage</span> <span class="s1">&#39;http://www.vagrantup.com&#39;</span></td>
+          </tr>
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/f34563e300200ec04e124c73e0b525776f321b89">f34563e3</a>
+                  <a href="/phinze/homebrew-cask/blame/f34563e300200ec04e124c73e0b525776f321b89/Casks/vagrant.rb">&#187;</a>
+                  <a href="/janrito" rel="author">janrito</a>
+                </code>
+                <br />
+                <span class="date">2013-10-16</span>
+                <span class="message" title="Updated vagrant to 1.3.5
+
+Updated Vagrant to latest version (1.3.5) compatible with the latest virtualbox">Updated vagrant to 1.3.5 </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-10-16 03:01:19 -0700"></td>
+            <td nowrap class="diff-line-num line-number" id="LID4" rel="#L4">4</td>
+            <td nowrap class="diff-line-code line-data" id="LC4">  <span class="n">version</span> <span class="s1">&#39;1.3.5&#39;</span></td>
+          </tr>
+            <tr>
+              <td nowrap class="commitinfo"> </td>
+            <td class="js-line-age line-age" data-date="2013-10-16 03:01:19 -0700"></td>
+            <td nowrap class="diff-line-num line-number" id="LID5" rel="#L5">5</td>
+            <td nowrap class="diff-line-code line-data" id="LC5">  <span class="n">sha1</span> <span class="s1">&#39;c123b4f80abd9cec83f7499d8dc2bc60b850b882&#39;</span></td>
+          </tr>
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/3991bd68391f6d2cca8d44fbd254efd23acf3522">3991bd68</a>
+                  <a href="/phinze/homebrew-cask/blame/3991bd68391f6d2cca8d44fbd254efd23acf3522/Casks/vagrant.rb">&#187;</a>
+                  <a href="/phinze" rel="author">phinze</a>
+                </code>
+                <br />
+                <span class="date">2013-05-11</span>
+                <span class="message" title="a beta pkg installer
+
+- the vagrant cask is our guinea pig
+- works for me
+- only basic testing at the moment
+- i wanted to push something to get the gears turning on this
+
+it turns out the concept is pretty simple. specify a list of pkgs to
+install; borrow the patterns from linkables for that. then basically
+just run &quot;sudo installer&quot;
+
+refs #14">a beta pkg installer </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-05-11 21:00:26 -0700"></td>
+            <td nowrap class="diff-line-num line-number" id="LID6" rel="#L6">6</td>
+            <td nowrap class="diff-line-code line-data" id="LC6">  <span class="n">install</span> <span class="s1">&#39;Vagrant.pkg&#39;</span></td>
+          </tr>
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/171456dc98fe1d5e6641c4ac7a5d9c8414773ce8">171456dc</a>
+                  <a href="/phinze/homebrew-cask/blame/171456dc98fe1d5e6641c4ac7a5d9c8414773ce8/Casks/vagrant.rb">&#187;</a>
+                  <a href="/phinze" rel="author">phinze</a>
+                </code>
+                <br />
+                <span class="date">2013-05-23</span>
+                <span class="message" title="support for install/uninstall
+
+accepts a single argument, which is a relative path to a pkg
+inside the extracted Cask; homebrew-cask will attempt to install this
+pkg after the Cask is extracted via `installer`
+
+because of the many different ways uninstallers work, this
+has several features:
+
+ - `:script`: a script in the Cask which serves as an uninstaller (e.g.
+   Vagrant, VirtualBox), uses `:args`, and `:input` keys to interact
+   with said script
+ - `:pkgutil`: a regexp which captures all package_ids installed by this
+   cask; homebrew-cask will list all files installed under these ids and
+   remove them
+ - `:launchctl`: a list of bundle_ids for services that should be
+   removed by homebrew-cask
+ - `:files`: a fallback list of files to manually remove; helps when
+   uninstallers miss something
+
+refs #661">support for install/uninstall </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-05-23 18:46:51 -0700"></td>
+            <td nowrap class="diff-line-num line-number" id="LID7" rel="#L7">7</td>
+            <td nowrap class="diff-line-code line-data" id="LC7">  <span class="n">uninstall</span> <span class="ss">:script</span> <span class="o">=&gt;</span> <span class="s1">&#39;uninstall.tool&#39;</span><span class="p">,</span> <span class="ss">:input</span> <span class="o">=&gt;</span> <span class="sx">%w[Yes]</span></td>
+          </tr>
+            <tr class="section-first">
+              <td nowrap class="commitinfo">
+                <code>
+                  <a href="/phinze/homebrew-cask/commit/92ea8c0ee9c73b2895388e14ada88e327f3a39a8">92ea8c0e</a>
+                  <a href="/phinze/homebrew-cask/blame/92ea8c0ee9c73b2895388e14ada88e327f3a39a8/Casks/vagrant.rb">&#187;</a>
+                  <a href="/jasisk" rel="author">jasisk</a>
+                </code>
+                <br />
+                <span class="date">2013-02-06</span>
+                <span class="message" title="Vagrant 1.0.6
+
+Partial support (download + checksum only) for .pkg installers.
+Closes #151.
+
+Signed-off-by: Félix Saparelli &lt;me@passcod.net&gt;">Vagrant 1.0.6 </span>
+              </td>
+            <td class="js-line-age line-age" data-date="2013-02-06 13:36:17 -0800"></td>
+            <td nowrap class="diff-line-num line-number" id="LID8" rel="#L8">8</td>
+            <td nowrap class="diff-line-code line-data" id="LC8"><span class="k">end</span></td>
+          </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2013 <span title="0.01914s from github-fe137-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+          <div class="suggester-container">
+              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
+                 data-url="/phinze/homebrew-cask/suggestions/commit">
+              </div>
+          </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
+      title="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+  </body>
+</html>
+
