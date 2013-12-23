@@ -1,4 +1,4 @@
-class Virtualbox < Cask
+class Virtualbox42 < Cask
   homepage 'http://www.virtualbox.org'
   version '4.2.10-84104'
   url 'http://download.virtualbox.org/virtualbox/4.2.10/VirtualBox-4.2.10-84104-OSX.dmg'
