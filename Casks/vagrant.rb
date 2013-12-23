@@ -1,4 +1,4 @@
-class Vagrant135 < Cask
+class Vagrant < Cask
   url 'http://files.vagrantup.com/packages/a40522f5fabccb9ddabad03d836e120ff5d14093/Vagrant-1.3.5.dmg'
   homepage 'http://www.vagrantup.com'
   version '1.3.5'
